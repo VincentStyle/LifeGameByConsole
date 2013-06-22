@@ -56,7 +56,7 @@ namespace LibraryBacterie
             bool aMange = false;
             int compteur = 0;
 
-            while (!aMange || compteur < lesBacteriesVoisines.Count)
+            while (compteur < lesBacteriesVoisines.Count)
             {
                 if (this.GetType() != lesBacteriesVoisines[compteur].GetType()) // On regarde si le type des bacterie est bien différent
                 {
@@ -70,7 +70,7 @@ namespace LibraryBacterie
                         Monde.SupprimerBacterie(lesBacteriesVoisines[compteur]);
 
                         // Il a bien mangé maintenant il faut digérer
-                        aMange = true;
+                        compteur = lesBacteriesVoisines.Count;
                     }
                 }
 

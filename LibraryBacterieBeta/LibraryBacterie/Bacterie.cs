@@ -134,15 +134,15 @@ namespace LibraryBacterie
                 this._positionY = randomY.Next(0, 2);
             }
             
-            this._dureeDeVie = 5;
+            this._dureeDeVie = 20;
             this._peutSeReproduire = true;
             this._dureeAvantReproduction = 0;
-            this._majorite = true;
+            this._majorite = false;
             //this._distance = 3;
             this._estImmobile = false;
 
             Random randomSexe = new Random();
-            this._sexe = randomSexe.Next(0, 1);
+            this._sexe = randomSexe.Next(0,2);
         }
 
         public Bacterie(int positionX, int positionY, int dureeDeVie)

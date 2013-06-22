@@ -16,12 +16,20 @@ namespace TestLibraryConsole
             // monde de 16 cases cad 4x / 4y
             
             //On créer des bacteries A
-            for (int i = 0; i < 2; i++)
+            for (int i = 0; i < 1; i++)
+            {
+                BacterieB uneBacterieB = new BacterieB();
+                Monde.AjouterBacterie(uneBacterieB);
+                Console.WriteLine("Une bactérie A entre dans le monde ! x = " + uneBacterieB.PositionX + " y = " + uneBacterieB.PositionY + " de sexe " + uneBacterieB.Sexe);
+            }
+
+            for (int i = 0; i < 1; i++)
             {
                 BacterieA uneBacterieA = new BacterieA();
                 Monde.AjouterBacterie(uneBacterieA);
-                Console.WriteLine("Une bactérie A entre dans le monde ! x = " + uneBacterieA.PositionX + " y = " + uneBacterieA.PositionY);
+                Console.WriteLine("Une bactérie A entre dans le monde ! x = " + uneBacterieA.PositionX + " y = " + uneBacterieA.PositionY + " de sexe " + uneBacterieA.Sexe);
             }
+
 
             //Création bactérie B
             //for (int i = 0; i < 1; i++)
@@ -34,7 +42,11 @@ namespace TestLibraryConsole
 
 
             //A présent ma liste Monde est créer les bactéries peuvent alors s'affronter !
-            foreach (Bacterie unHabitant in Monde.LesHabitants) 
+
+            List<Bacterie> listeDesHabitants = Monde.LesHabitants;
+            
+//foreach (Bacterie unHabitant in listeDesHabitants) 
+            for (int i = 0; i< Monde.LesHabitants.Count; i++)
             {
                
                 //Test deplacer
@@ -63,22 +75,34 @@ namespace TestLibraryConsole
                 //ok++;
 
                 //Test Reproduire
-                List<Bacterie> lesVoisins = unHabitant.RegarderAutour(Monde.LesHabitants);
-                foreach(Bacterie unVoisin in lesVoisins)
-                {
-                    if(unHabitant.PeuxSeduire(unVoisin))
-                    {
-                        unHabitant.Reproduire(unVoisin);
-                    }
-                }
+                //List<Bacterie> lesVoisins = Monde.LesHabitants[i].RegarderAutour(Monde.LesHabitants);
+                //foreach(Bacterie unVoisin in lesVoisins)
+                //{
+                //    if (Monde.LesHabitants[i].PeuxSeduire(unVoisin))
+                //    {
+                //        Console.WriteLine("Une bactérie A entre dans le monde ! x = " + unVoisin.PositionX + " y = " + unVoisin.PositionY + " de sexe " + unVoisin.Sexe);
+                //        Monde.LesHabitants[i].Reproduire(unVoisin);
+                //    }
+                //}
 
-                Console.WriteLine(" Premier boucle ");
+                //Console.WriteLine(" Premier boucle ");
+                Console.WriteLine(Monde.LesHabitants.Count);
+
+                List<Bacterie> lesVoisins = Monde.LesHabitants[i].RegarderAutour(Monde.LesHabitants);
+                Console.WriteLine(lesVoisins.Count);
+                //Console.WriteLine("euh ?");
+                Monde.LesHabitants[i].Manger(lesVoisins);
+
+                Console.WriteLine(" J'ai mangé mon ami ");
+
+                Console.WriteLine(Monde.LesHabitants.Count);
+
             }
 
-            foreach (Bacterie unHabitant in Monde.LesHabitants)
-            {
-                Console.WriteLine(" Bonjour ");
-            }
+            //foreach (Bacterie unHabitant in Monde.LesHabitants)
+            //{
+            //    Console.WriteLine(" Bonjour ");
+            //}
 
                 
 
