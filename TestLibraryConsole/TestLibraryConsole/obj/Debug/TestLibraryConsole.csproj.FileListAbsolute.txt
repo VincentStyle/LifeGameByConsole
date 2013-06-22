@@ -1,0 +1,14 @@
+c:\users\vincent\documents\visual studio 2012\Projects\TestLibraryConsole\TestLibraryConsole\bin\Debug\TestLibraryConsole.exe.config
+c:\users\vincent\documents\visual studio 2012\Projects\TestLibraryConsole\TestLibraryConsole\bin\Debug\TestLibraryConsole.exe
+c:\users\vincent\documents\visual studio 2012\Projects\TestLibraryConsole\TestLibraryConsole\bin\Debug\TestLibraryConsole.pdb
+c:\users\vincent\documents\visual studio 2012\Projects\TestLibraryConsole\TestLibraryConsole\obj\Debug\TestLibraryConsole.csprojResolveAssemblyReference.cache
+c:\users\vincent\documents\visual studio 2012\Projects\TestLibraryConsole\TestLibraryConsole\obj\Debug\TestLibraryConsole.exe
+c:\users\vincent\documents\visual studio 2012\Projects\TestLibraryConsole\TestLibraryConsole\obj\Debug\TestLibraryConsole.pdb
+C:\Users\Vincent\Desktop\TestLibraryConsole\TestLibraryConsole\bin\Debug\TestLibraryConsole.exe.config
+C:\Users\Vincent\Desktop\TestLibraryConsole\TestLibraryConsole\obj\Debug\TestLibraryConsole.exe
+C:\Users\Vincent\Desktop\TestLibraryConsole\TestLibraryConsole\obj\Debug\TestLibraryConsole.pdb
+C:\Users\Vincent\Desktop\TestLibraryConsole\TestLibraryConsole\bin\Debug\TestLibraryConsole.exe
+C:\Users\Vincent\Desktop\TestLibraryConsole\TestLibraryConsole\bin\Debug\TestLibraryConsole.pdb
+C:\Users\Vincent\Desktop\TestLibraryConsole\TestLibraryConsole\bin\Debug\LibraryBacterie.dll
+C:\Users\Vincent\Desktop\TestLibraryConsole\TestLibraryConsole\bin\Debug\LibraryBacterie.pdb
+C:\Users\Vincent\Desktop\TestLibraryConsole\TestLibraryConsole\obj\Debug\TestLibraryConsole.csprojResolveAssemblyReference.cache
