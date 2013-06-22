@@ -16,7 +16,7 @@ namespace TestLibraryConsole
             // monde de 16 cases cad 4x / 4y
             
             //On créer des bacteries A
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 2; i++)
             {
                 BacterieA uneBacterieA = new BacterieA();
                 Monde.AjouterBacterie(uneBacterieA);
@@ -33,8 +33,7 @@ namespace TestLibraryConsole
 
 
 
-          //A présent ma liste Monde est créer les bactéries peuvent alors s'affronter !
-            int ok = 0;
+            //A présent ma liste Monde est créer les bactéries peuvent alors s'affronter !
             foreach (Bacterie unHabitant in Monde.LesHabitants) 
             {
                
@@ -55,16 +54,33 @@ namespace TestLibraryConsole
                 //unHabitant.();
 
                 //Test Regarder autour
-                List<Bacterie> lesVoisins = unHabitant.RegarderAutour(Monde.LesHabitants);
-                Console.WriteLine(" Moi bactérie "+ok+ unHabitant.GetType());
-                for (int i = 0; i < lesVoisins.Count;i++ )
-                {
-                    Console.WriteLine("Je vois la bacterie positionnée x =" + lesVoisins[i].PositionX + " et y = " + lesVoisins[i].PositionY);
-                }
-                ok++;
+                //List<Bacterie> lesVoisins = unHabitant.RegarderAutour(Monde.LesHabitants);
+                //Console.WriteLine(" Moi bactérie "+ok+ unHabitant.GetType());
+                //for (int i = 0; i < lesVoisins.Count;i++ )
+                //{
+                //    Console.WriteLine("Je vois la bacterie positionnée x =" + lesVoisins[i].PositionX + " et y = " + lesVoisins[i].PositionY);
+                //}
+                //ok++;
 
+                //Test Reproduire
+                List<Bacterie> lesVoisins = unHabitant.RegarderAutour(Monde.LesHabitants);
+                foreach(Bacterie unVoisin in lesVoisins)
+                {
+                    if(unHabitant.PeuxSeduire(unVoisin))
+                    {
+                        unHabitant.Reproduire(unVoisin);
+                    }
+                }
+
+                Console.WriteLine(" Premier boucle ");
             }
 
+            foreach (Bacterie unHabitant in Monde.LesHabitants)
+            {
+                Console.WriteLine(" Bonjour ");
+            }
+
+                
 
              //BacterieB uneBacterieB = new BacterieB();
              //Monde.AjouterBacterie(uneBacterieB);

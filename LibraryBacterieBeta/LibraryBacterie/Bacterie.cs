@@ -134,10 +134,10 @@ namespace LibraryBacterie
                 this._positionY = randomY.Next(0, 2);
             }
             
-            this._dureeDeVie = 20;
+            this._dureeDeVie = 5;
             this._peutSeReproduire = true;
             this._dureeAvantReproduction = 0;
-            this._majorite = false;
+            this._majorite = true;
             //this._distance = 3;
             this._estImmobile = false;
 
@@ -172,9 +172,13 @@ namespace LibraryBacterie
             //Parcours de la liste lstHabitants
             foreach (Bacterie unHabitant in lstHabitants)
             {
-                if ( this.PositionX != unHabitant.PositionX && this.PositionY != unHabitant.PositionY)
+                if (this.PositionX == unHabitant.PositionX && this.PositionY == unHabitant.PositionY)
                 {
-                    //On test si la position X se trouvent au dessus/au milieu/dessous de l'objet instancié 
+                    //Si il s'agit de lui meme
+                }
+                else
+                {
+                        //On test si la position X se trouvent au dessus/au milieu/dessous de l'objet instancié 
                     if (this.PositionX == unHabitant.PositionX || this.PositionX - 1 == unHabitant.PositionX || this.PositionX + 1 == unHabitant.PositionX)
                     {
                         //On test si la position Y se trouvent au dessus/au milieu/dessous de l'objet instancié 
@@ -184,8 +188,8 @@ namespace LibraryBacterie
                             lstBacteriesProches.Add(unHabitant);
                         }
                     }
+                
                 }
-               
             }
 
             return lstBacteriesProches;

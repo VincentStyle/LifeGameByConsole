@@ -12,3 +12,11 @@ C:\Users\Vincent\Desktop\TestLibraryConsole\TestLibraryConsole\bin\Debug\TestLib
 C:\Users\Vincent\Desktop\TestLibraryConsole\TestLibraryConsole\bin\Debug\LibraryBacterie.dll
 C:\Users\Vincent\Desktop\TestLibraryConsole\TestLibraryConsole\bin\Debug\LibraryBacterie.pdb
 C:\Users\Vincent\Desktop\TestLibraryConsole\TestLibraryConsole\obj\Debug\TestLibraryConsole.csprojResolveAssemblyReference.cache
+C:\wamp\www\GitHub\LifeGameByConsole\TestLibraryConsole\TestLibraryConsole\bin\Debug\TestLibraryConsole.exe.config
+C:\wamp\www\GitHub\LifeGameByConsole\TestLibraryConsole\TestLibraryConsole\obj\Debug\TestLibraryConsole.exe
+C:\wamp\www\GitHub\LifeGameByConsole\TestLibraryConsole\TestLibraryConsole\obj\Debug\TestLibraryConsole.pdb
+C:\wamp\www\GitHub\LifeGameByConsole\TestLibraryConsole\TestLibraryConsole\bin\Debug\TestLibraryConsole.exe
+C:\wamp\www\GitHub\LifeGameByConsole\TestLibraryConsole\TestLibraryConsole\bin\Debug\TestLibraryConsole.pdb
+C:\wamp\www\GitHub\LifeGameByConsole\TestLibraryConsole\TestLibraryConsole\bin\Debug\LibraryBacterie.dll
+C:\wamp\www\GitHub\LifeGameByConsole\TestLibraryConsole\TestLibraryConsole\bin\Debug\LibraryBacterie.pdb
+C:\wamp\www\GitHub\LifeGameByConsole\TestLibraryConsole\TestLibraryConsole\obj\Debug\TestLibraryConsole.csprojResolveAssemblyReference.cache
